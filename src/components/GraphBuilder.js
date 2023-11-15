@@ -1,3 +1,10 @@
+const partyColors = {
+  'Democrats': '#3498DB', // blue
+  'Democrats-dark': '#2471A3', // dark blue
+  'Republicans': '#E74C3C', // red
+  'Republicans-dark': '#A93226', // dark red
+};
+
 export function buildOptions() {
     return {
         interaction: {
@@ -8,6 +15,10 @@ export function buildOptions() {
         },
         edges: {
           color: "grey"
+        },
+        nodes: {
+          borderWidth: 8,
+          borderWidthSelected: 11
         }
       };
 }
@@ -21,14 +32,27 @@ export function readGraph() {
   // Add nodes
   context.keys().forEach(key => {
     const data = context(key)
+    console.log(partyColors)
+
     let node = { 
       id: data['account_name'],
       full_name: data['full_name'],
-      shape: 'circularImage',
-      image: data['profile_image_url'],
       political_party: data['political_party'],
       positiveness: data['positiveness'],
+     
+      shape: 'circularImage',
+      image: data['profile_image_url'],
+      color: {
+        border: partyColors[data['political_party']],
+        highlight: { 
+          border: partyColors[data['political_party'] + '-dark'] 
+        },
+        hover: { 
+          border: partyColors[data['political_party'] + '-dark']
+        },
+      }
     }
+
     nodes.push(node)
   })
 

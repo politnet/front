@@ -31,7 +31,9 @@ const GraphComponent = () => {
             hoverNode: handleNodeHover,
             blurNode: handleNodeBlur,
           }}
-          getNetwork={(network) => network.fit()}
+          getNetwork={(network) => {
+            network.fit()
+          }}
         />
         <Tooltip content={tooltipContent} position={tooltipPosition} />
       </>
