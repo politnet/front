@@ -1,10 +1,8 @@
-import './App.css';
-import GraphComponent from './Graph';
+import GraphComponent from './components/Graph';
 
 function App() {
   return (
     <div className="App" style={{ height: '100vh' }}>
-      {/* <p>Graph</p> */}
       <GraphComponent />
     </div>
   );
