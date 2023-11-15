@@ -1,9 +1,21 @@
 .tooltip {
     position: absolute;
-    transform: translate(-50%, -50%);
-    background: rgba(255, 255, 255, 0.9);
-    padding: 10px;
+    transform: translate(0%, 0%);
+    transition: opacity 0.3s, transform 0.3s; 
+    background-color: #F4F5F5;
+    padding: 0.5em;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.tooltip h5 {
+    padding: 0.25em;
+    margin: 0;
+}
+
+.tooltip p {
+    padding: 0.25em;
+    margin: 0;
+    font-size: 0.75em;
 }

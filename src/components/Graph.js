@@ -7,18 +7,18 @@ const options = buildOptions();
 const graph = readGraph();
 
 const GraphComponent = () => {
-    const [tooltipContent, setTooltipContent] = useState('');
+    const [tooltipNode, setTooltipNode] = useState(null);
     const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 });
 
     const handleNodeHover = (data) => {
       let e = data.event
       let node = graph.nodes.find(node => node.id === data.node) 
-      setTooltipContent(node.full_name);
+      setTooltipNode(node);
       setTooltipPosition({ x: e.clientX, y: e.clientY });
     };
 
     const handleNodeBlur = () => {
-      setTooltipContent('');
+      setTooltipNode(null);
       setTooltipPosition({ x: 0, y: 0 });
     };
 
@@ -35,7 +35,7 @@ const GraphComponent = () => {
             network.fit()
           }}
         />
-        <Tooltip content={tooltipContent} position={tooltipPosition} />
+        <Tooltip node={tooltipNode} position={tooltipPosition} />
       </>
     )
 };

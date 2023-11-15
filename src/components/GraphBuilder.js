@@ -32,7 +32,6 @@ export function readGraph() {
   // Add nodes
   context.keys().forEach(key => {
     const data = context(key)
-    console.log(partyColors)
 
     let node = { 
       id: data['account_name'],
