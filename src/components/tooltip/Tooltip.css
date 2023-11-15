@@ -1,6 +1,6 @@
 .tooltip {
     position: absolute;
-    transform: translate(0%, 0%);
+    transform: translate(25%, 0%);
     transition: opacity 0.3s, transform 0.3s; 
     background-color: #F4F5F5;
     padding: 0.5em;

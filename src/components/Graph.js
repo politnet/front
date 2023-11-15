@@ -2,6 +2,7 @@ import Graph from "react-graph-vis";
 import { React, useState } from "react";
 import Tooltip from "./tooltip/Tooltip";
 import { buildOptions, readGraph } from './GraphBuilder'
+import Details from "./details/Details"
 
 const options = buildOptions();
 const graph = readGraph();
@@ -9,6 +10,7 @@ const graph = readGraph();
 const GraphComponent = () => {
     const [tooltipNode, setTooltipNode] = useState(null);
     const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 });
+    const [detailsNode, setDetailsNode] = useState(null);
 
     const handleNodeHover = (data) => {
       let e = data.event
@@ -22,6 +24,15 @@ const GraphComponent = () => {
       setTooltipPosition({ x: 0, y: 0 });
     };
 
+    const handleSelectNode = (data) => {
+      let node = graph.nodes.find(node => node.id === data.nodes[0])
+      setDetailsNode(node);
+    }
+
+    const handleDeselectNode = () => {
+      setDetailsNode(null);
+    }
+
     return (
       <>
         <Graph
@@ -30,12 +41,15 @@ const GraphComponent = () => {
           events={{
             hoverNode: handleNodeHover,
             blurNode: handleNodeBlur,
+            selectNode: handleSelectNode,
+            deselectNode: handleDeselectNode,
           }}
           getNetwork={(network) => {
             network.fit()
           }}
         />
         <Tooltip node={tooltipNode} position={tooltipPosition} />
+        <Details node={detailsNode} />
       </>
     )
 };
