@@ -15,6 +15,8 @@ const GraphComponent = () => {
     const handleNodeHover = (data) => {
       let e = data.event
       let node = graph.nodes.find(node => node.id === data.node) 
+      if (detailsNode === node) return;
+
       setTooltipNode(node);
       setTooltipPosition({ x: e.clientX, y: e.clientY });
     };
