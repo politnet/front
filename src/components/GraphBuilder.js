@@ -38,7 +38,8 @@ export function readGraph() {
       full_name: data['full_name'],
       political_party: data['political_party'],
       positiveness: data['positiveness'],
-     
+      description: data['description'],
+      
       shape: 'circularImage',
       image: data['profile_image_url'],
       color: {
