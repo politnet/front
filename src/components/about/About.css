@@ -1,0 +1,17 @@
+.about {
+    display: flex;
+    align-items: flex-start;
+}
+
+.close {
+    align-self: flex-end;
+    border: none;
+    background: none;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.close:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}

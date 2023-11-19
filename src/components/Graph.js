@@ -39,6 +39,13 @@ const GraphComponent = () => {
       setDetailsNode(null);
     }
 
+    const handleAboutClick = () => {
+      console.log("about clicked")
+      setAboutOpen(true);
+      setTooltipNode(null);
+      setDetailsNode(null);
+    }
+    
     return (
       <>
         <Graph
@@ -56,8 +63,8 @@ const GraphComponent = () => {
         />
         <Tooltip node={tooltipNode} position={tooltipPosition} />
         <Details node={detailsNode} nodeSetter={setDetailsNode}/>
-        <button onClick={() => setAboutOpen(true)}>About</button>
-        {aboutOpen && <About setAboutOpen={setAboutOpen}/>}
+        <button onClick={() => handleAboutClick()}>About</button>
+        {aboutOpen && <About setAboutOpen={setAboutOpen} graph={graph}/>}
       </>
     )
 };
