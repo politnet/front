@@ -1,4 +1,5 @@
 import "./Details.css"
+import "../Common.css"
 import { ReactComponent as PositivenessIcon } from './resources/positivness.svg'
 import MentionList from "./mention_list/MentionList";
 
@@ -20,7 +21,7 @@ const Details = ({ node, nodeSetter }) => {
     const top_5_out_mentions = node && node.top_5_out_mentions ? node.top_5_out_mentions : []
 
     return (
-      <div className="details"
+      <div className="details side-panel"
         style={{
           opacity: visible,
           display: display

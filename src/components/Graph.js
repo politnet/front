@@ -3,6 +3,8 @@ import { React, useState } from "react";
 import Tooltip from "./tooltip/Tooltip";
 import { buildOptions, readGraph } from './GraphBuilder'
 import Details from "./details/Details"
+import "./Graph.css";
+import About from "./about/About";
 
 const options = buildOptions();
 const graph = readGraph();
@@ -11,6 +13,7 @@ const GraphComponent = () => {
     const [tooltipNode, setTooltipNode] = useState(null);
     const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 });
     const [detailsNode, setDetailsNode] = useState(null);
+    const [aboutOpen, setAboutOpen] = useState(false);
 
     const handleNodeHover = (data) => {
       let e = data.event
@@ -29,6 +32,7 @@ const GraphComponent = () => {
     const handleSelectNode = (data) => {
       let node = graph.nodes.find(node => node.id === data.nodes[0])
       setDetailsNode(node);
+      setAboutOpen(false);
     }
 
     const handleDeselectNode = () => {
@@ -52,6 +56,8 @@ const GraphComponent = () => {
         />
         <Tooltip node={tooltipNode} position={tooltipPosition} />
         <Details node={detailsNode} nodeSetter={setDetailsNode}/>
+        <button onClick={() => setAboutOpen(true)}>About</button>
+        {aboutOpen && <About setAboutOpen={setAboutOpen}/>}
       </>
     )
 };

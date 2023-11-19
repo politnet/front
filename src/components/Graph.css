@@ -1,0 +1,16 @@
+.App > button {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: none;
+    background: none;
+    width: 6em;
+    height: 3em;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.App > button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
