@@ -5,6 +5,41 @@ const partyColors = {
   'Republicans-dark': '#A93226', // dark red
 };
 
+function createNode(data) {
+  return { 
+    id: data['account_name'],
+    full_name: data['full_name'],
+    political_party: data['political_party'],
+    positiveness: data['positiveness'],
+    description: data['description'],
+    top_5_in_mentions: data['top_5_in_mentions'],
+    top_5_out_mentions: data['top_5_out_mentions'],
+
+    shape: 'circularImage',
+    image: data['profile_image_url'],
+    color: {
+      border: partyColors[data['political_party']],
+      highlight: { 
+        border: partyColors[data['political_party'] + '-dark'] 
+      },
+      hover: { 
+        border: partyColors[data['political_party'] + '-dark']
+      },
+    }
+  }
+}
+
+function transformTopMentions(nodes) {
+  nodes.forEach(node => {
+    node['top_5_in_mentions'] = node['top_5_in_mentions'].map(mention => {
+      return nodes.find(node => node['id'] === mention)
+    })
+    node['top_5_out_mentions'] = node['top_5_out_mentions'].map(mention => {
+      return nodes.find(node => node['id'] === mention)
+    })
+  })
+}
+
 export function buildOptions() {
     return {
         interaction: {
@@ -32,31 +67,11 @@ export function readGraph() {
   // Add nodes
   context.keys().forEach(key => {
     const data = context(key)
-
-    let node = { 
-      id: data['account_name'],
-      full_name: data['full_name'],
-      political_party: data['political_party'],
-      positiveness: data['positiveness'],
-      description: data['description'],
-      top_5_in_mentions: data['top_5_in_mentions'],
-      top_5_out_mentions: data['top_5_out_mentions'],
-
-      shape: 'circularImage',
-      image: data['profile_image_url'],
-      color: {
-        border: partyColors[data['political_party']],
-        highlight: { 
-          border: partyColors[data['political_party'] + '-dark'] 
-        },
-        hover: { 
-          border: partyColors[data['political_party'] + '-dark']
-        },
-      }
-    }
-
-    nodes.push(node)
+    nodes.push(createNode(data))
   })
+
+  // Store nodes instead of account names
+  transformTopMentions(nodes)
 
   // Add edges
   context.keys().forEach(key => {
