@@ -31,6 +31,17 @@
     overflow: auto;
 }
 
+.details::-webkit-scrollbar{
+    width: 0.5em;
+    background:#e2e2e2;
+}
+
+.details::-webkit-scrollbar-thumb {
+    background:#7a7a7a;
+    border-radius: 1em;
+}
+
+
 .details .profile-image {
     width: 10em;
     height: 10em; 
