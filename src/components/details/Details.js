@@ -8,7 +8,7 @@ function getPositivenessColor(positiveness) {
   return `rgb(${red}, ${green}, 0)`;
 }
 
-const Details = ({ node }) => {
+const Details = ({ node, nodeSetter }) => {
     const visible = node ? 1 : 0
     const display = visible ? 'flex' : 'none'
     const full_name = node && node.full_name ? node.full_name : ''
@@ -36,8 +36,8 @@ const Details = ({ node }) => {
         <div className="description">
           <p>{description}</p>
         </div>
-        <MentionList title={"Top 5 Mentioned by"} mentions={top_5_in_mentions} />
-        <MentionList title={"Top 5 Mentions"} mentions={top_5_out_mentions} />
+        <MentionList title={"Top 5 Mentioned by"} mentions={top_5_in_mentions} nodeSetter={nodeSetter}/>
+        <MentionList title={"Top 5 Mentions"} mentions={top_5_out_mentions} nodeSetter={nodeSetter}/>
       </div>
     );
   }

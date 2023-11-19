@@ -1,0 +1,20 @@
+.mention-list {
+    width: 100%;
+}
+
+.mention {
+    display: flex;
+    padding: 0.25em 0;
+}
+
+.mention:hover {
+    cursor: pointer;
+}
+
+.mention img {
+    width: 2em;
+    height: 2em;
+    margin-right: 1em;
+    border-radius: 50%;
+}
+

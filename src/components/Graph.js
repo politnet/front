@@ -51,7 +51,7 @@ const GraphComponent = () => {
           }}
         />
         <Tooltip node={tooltipNode} position={tooltipPosition} />
-        <Details node={detailsNode} />
+        <Details node={detailsNode} nodeSetter={setDetailsNode}/>
       </>
     )
 };
