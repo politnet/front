@@ -1,3 +1,6 @@
+const edgeScale = 0.2
+const nodeScale = 0.2
+
 const partyColors = {
   'Democrats': '#3498DB', // blue
   'Democrats-dark': '#2471A3', // dark blue
@@ -35,7 +38,7 @@ function createEdge(account_name, out_mention) {
   return { 
     from:account_name,
     to: out_mention_account_name,
-    width: out_mention_count / 2
+    width: out_mention_count * edgeScale
   }
 }
 
@@ -61,7 +64,7 @@ function resizeNodes(nodes, edges) {
   });
 
   nodes.forEach(node => {
-    node.value = (inDegrees[node.id] / 2) || 1;
+    node.value = (inDegrees[node.id] * nodeScale) || nodeScale;
   });
 }
 
