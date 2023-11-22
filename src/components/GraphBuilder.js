@@ -29,6 +29,16 @@ function createNode(data) {
   }
 }
 
+function createEdge(account_name, out_mention) {
+  let out_mention_account_name = Object.keys(out_mention)[0];
+  let out_mention_count = out_mention[out_mention_account_name];
+  return { 
+    from:account_name,
+    to: out_mention_account_name,
+    width: out_mention_count / 2
+  }
+}
+
 function transformTopMentions(nodes) {
   nodes.forEach(node => {
     node['top_5_in_mentions'] = node['top_5_in_mentions'].map(mention => {
@@ -44,9 +54,9 @@ function resizeNodes(nodes, edges) {
   let inDegrees = {};
   edges.forEach(edge => {
     if (inDegrees[edge.to]) {
-      inDegrees[edge.to]++;
+      inDegrees[edge.to] += edge.width;
     } else {
-      inDegrees[edge.to] = 1;
+      inDegrees[edge.to] = edge.width;
     }
   });
 
@@ -64,12 +74,16 @@ export function buildOptions() {
           hierarchical: false
         },
         edges: {
-          color: "grey",
+          color: {
+            color: '#e2e2e2',
+            hover: '#7a7a7a',
+          },
           smooth: {
             type: 'dynamic',
             forceDirection: 'none',
             roundness: 0.5
-          }
+          },
+          hoverWidth: function (width) { return width; }
         },
         nodes: {
           borderWidth: 8,
@@ -96,12 +110,9 @@ export function readGraph() {
   // Add edges
   context.keys().forEach(key => {
     const data = context(key)
+    const account_name = data['account_name']
     data['all_out_mentions'].forEach(out_mention => {
-      let edge = { 
-        from: data['account_name'],
-        to: out_mention
-      }
-      edges.push(edge)
+      edges.push(createEdge(account_name, out_mention))
     })
   })
 
