@@ -2,6 +2,7 @@ import "./Details.css"
 import "../Common.css"
 import { ReactComponent as PositivenessIcon } from './resources/positivness.svg'
 import MentionList from "./mention_list/MentionList";
+import React, { useEffect, useRef } from 'react';
 
 function getPositivenessColor(positiveness) {
   const red = Math.floor((1 - positiveness) * 200);
@@ -20,12 +21,21 @@ const Details = ({ node, nodeSetter }) => {
     const top_5_in_mentions = node && node.top_5_in_mentions ? node.top_5_in_mentions : []
     const top_5_out_mentions = node && node.top_5_out_mentions ? node.top_5_out_mentions : []
 
+    const detailsRef = useRef(null);
+
+    useEffect(() => {
+      if (detailsRef.current) {
+        detailsRef.current.scrollTop = 0;
+      }
+    }, [node]);
+
     return (
       <div className="details side-panel"
         style={{
           opacity: visible,
           display: display
         }}
+        ref={detailsRef}
       >
         <img src={profile_image_url} className="profile-image" alt="Profile" />
         <h2>{full_name}</h2>
