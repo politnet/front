@@ -40,6 +40,21 @@ function transformTopMentions(nodes) {
   })
 }
 
+function resizeNodes(nodes, edges) {
+  let inDegrees = {};
+  edges.forEach(edge => {
+    if (inDegrees[edge.to]) {
+      inDegrees[edge.to]++;
+    } else {
+      inDegrees[edge.to] = 1;
+    }
+  });
+
+  nodes.forEach(node => {
+    node.value = (inDegrees[node.id] / 2) || 1;
+  });
+}
+
 export function buildOptions() {
     return {
         interaction: {
@@ -49,7 +64,12 @@ export function buildOptions() {
           hierarchical: false
         },
         edges: {
-          color: "grey"
+          color: "grey",
+          smooth: {
+            type: 'dynamic',
+            forceDirection: 'none',
+            roundness: 0.5
+          }
         },
         nodes: {
           borderWidth: 8,
@@ -84,6 +104,8 @@ export function readGraph() {
       edges.push(edge)
     })
   })
+
+  resizeNodes(nodes, edges)
 
   return {
       nodes: nodes,
