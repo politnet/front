@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/front/static/css/main.2cff1bcb.css",
-    "main.js": "/front/static/js/main.73783ff2.js",
+    "main.js": "/front/static/js/main.d676a221.js",
     "index.html": "/front/index.html",
     "static/media/positivness.svg": "/front/static/media/positivness.ec28931d26c6133a523b68c6c628ae74.svg",
     "main.2cff1bcb.css.map": "/front/static/css/main.2cff1bcb.css.map",
-    "main.73783ff2.js.map": "/front/static/js/main.73783ff2.js.map"
+    "main.d676a221.js.map": "/front/static/js/main.d676a221.js.map"
   },
   "entrypoints": [
     "static/css/main.2cff1bcb.css",
-    "static/js/main.73783ff2.js"
+    "static/js/main.d676a221.js"
   ]
 }
