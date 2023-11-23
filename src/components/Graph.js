@@ -15,13 +15,21 @@ const GraphComponent = () => {
     const [detailsNode, setDetailsNode] = useState(null);
     const [aboutOpen, setAboutOpen] = useState(false);
 
-    const handleNodeHover = (data) => {
-      let e = data.event
-      let node = graph.nodes.find(node => node.id === data.node) 
+    const handleNodeHover = (params, network) => {
+      let nodeId = params.node;
+      let node = graph.nodes.find(node => node.id === nodeId) 
       if (detailsNode === node) return;
 
+      let _, {x, y} = network.canvasToDOM(
+        network.getPositions([nodeId])[nodeId]
+      );
+      let nodeSize = node.value * 10
+      let scale = network.getScale()
+      x += nodeSize * scale;
+      y += nodeSize * scale;
+
       setTooltipNode(node);
-      setTooltipPosition({ x: e.clientX, y: e.clientY });
+      setTooltipPosition({ x: x, y: y });
     };
 
     const handleNodeBlur = () => {
@@ -52,13 +60,15 @@ const GraphComponent = () => {
           graph={graph}
           options={options}
           events={{
-            hoverNode: handleNodeHover,
             blurNode: handleNodeBlur,
             selectNode: handleSelectNode,
             deselectNode: handleDeselectNode,
           }}
           getNetwork={(network) => {
             network.fit()
+            network.on("hoverNode", (params) =>
+              handleNodeHover(params, network)
+            );
           }}
         />
         <Tooltip node={tooltipNode} position={tooltipPosition} />
