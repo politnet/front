@@ -18,21 +18,13 @@ const GraphComponent = () => {
     const [detailsNode, setDetailsNode] = useState(null);
     const [aboutOpen, setAboutOpen] = useState(false);
 
-    const handleNodeHover = (params, network) => {
-      let nodeId = params.node;
-      let node = graph.nodes.find(node => node.id === nodeId) 
+    const handleNodeHover = (data) => {
+      let e = data.event
+      let node = graph.nodes.find(node => node.id === data.node) 
       if (detailsNode === node) return;
 
-      let _, {x, y} = network.canvasToDOM(
-        network.getPositions([nodeId])[nodeId]
-      );
-      let nodeSize = node.value * 10
-      let scale = network.getScale()
-      x += nodeSize * scale;
-      y += nodeSize * scale;
-
       setNodeTooltip(node);
-      setNodeTooltipPosition({ x: x, y: y });
+      setNodeTooltipPosition({ x: e.clientX, y: e.clientY });
     };
 
     const handleEdgeHover = (data) => {
@@ -75,6 +67,7 @@ const GraphComponent = () => {
           graph={graph}
           options={options}
           events={{
+            hoverNode: handleNodeHover,
             hoverEdge: handleEdgeHover,
             blurNode: handleNodeBlur,
             blurEdge: handleEdgeBlur,
@@ -83,9 +76,6 @@ const GraphComponent = () => {
           }}
           getNetwork={(network) => {
             network.fit()
-            network.on("hoverNode", (params) =>
-              handleNodeHover(params, network)
-            );
           }}
         />
         <NodeTooltip node={nodeTooltip} position={nodeTooltipPosition} />
