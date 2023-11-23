@@ -1,17 +1,20 @@
 import Graph from "react-graph-vis";
 import { React, useState } from "react";
-import Tooltip from "./tooltip/Tooltip";
+import NodeTooltip from "./nodeTooltip/NodeTooltip";
 import { buildOptions, readGraph } from './GraphBuilder'
 import Details from "./details/Details"
 import "./Graph.css";
 import About from "./about/About";
+import EdgeTooltip from "./edgeTooltip/EdgeTooltip";
 
 const options = buildOptions();
 const graph = readGraph();
 
 const GraphComponent = () => {
-    const [tooltipNode, setTooltipNode] = useState(null);
-    const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 });
+    const [nodeTooltip, setNodeTooltip] = useState(null);
+    const [nodeTooltipPosition, setNodeTooltipPosition] = useState({ x: 0, y: 0 });
+    const [edgeTooltip, setEdgeTooltip] = useState(null);
+    const [edgeTooltipPosition, setEdgeTooltipPosition] = useState({ x: 0, y: 0 });
     const [detailsNode, setDetailsNode] = useState(null);
     const [aboutOpen, setAboutOpen] = useState(false);
 
@@ -28,13 +31,26 @@ const GraphComponent = () => {
       x += nodeSize * scale;
       y += nodeSize * scale;
 
-      setTooltipNode(node);
-      setTooltipPosition({ x: x, y: y });
+      setNodeTooltip(node);
+      setNodeTooltipPosition({ x: x, y: y });
+    };
+
+    const handleEdgeHover = (data) => {
+      let e = data.event
+      let edge = graph.edges.find(edge => edge.id === data.edge) 
+
+      setEdgeTooltip(edge);
+      setEdgeTooltipPosition({ x: e.clientX, y: e.clientY });
     };
 
     const handleNodeBlur = () => {
-      setTooltipNode(null);
-      setTooltipPosition({ x: 0, y: 0 });
+      setNodeTooltip(null);
+      setNodeTooltipPosition({ x: 0, y: 0 });
+    };
+
+    const handleEdgeBlur = () => {
+      setEdgeTooltip(null);
+      setEdgeTooltipPosition({ x: 0, y: 0 });
     };
 
     const handleSelectNode = (data) => {
@@ -48,9 +64,8 @@ const GraphComponent = () => {
     }
 
     const handleAboutClick = () => {
-      console.log("about clicked")
       setAboutOpen(true);
-      setTooltipNode(null);
+      setNodeTooltip(null);
       setDetailsNode(null);
     }
     
@@ -60,7 +75,9 @@ const GraphComponent = () => {
           graph={graph}
           options={options}
           events={{
+            hoverEdge: handleEdgeHover,
             blurNode: handleNodeBlur,
+            blurEdge: handleEdgeBlur,
             selectNode: handleSelectNode,
             deselectNode: handleDeselectNode,
           }}
@@ -71,7 +88,8 @@ const GraphComponent = () => {
             );
           }}
         />
-        <Tooltip node={tooltipNode} position={tooltipPosition} />
+        <NodeTooltip node={nodeTooltip} position={nodeTooltipPosition} />
+        <EdgeTooltip edge={edgeTooltip} position={edgeTooltipPosition} />
         <Details node={detailsNode} nodeSetter={setDetailsNode}/>
         <button onClick={() => handleAboutClick()}>About</button>
         {aboutOpen && <About setAboutOpen={setAboutOpen} graph={graph}/>}

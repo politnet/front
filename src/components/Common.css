@@ -1,3 +1,4 @@
+/* Side panel */
 @media (min-width: 1100px) {
     .side-panel {
         left: 75%;
@@ -39,4 +40,22 @@
 .side-panel::-webkit-scrollbar-thumb {
     background:#7a7a7a;
     border-radius: 1em;
+}
+
+/* Tooltip */
+.tooltip {
+    position: absolute;
+    transform: translate(25%, 0%);
+    transition: opacity 0.3s, transform 0.3s; 
+    background-color: #F4F5F5;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.tooltip p {
+    padding: 0.25em;
+    margin: 0;
+    font-size: 0.75em;
 }

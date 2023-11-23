@@ -1,12 +1,13 @@
-import './Tooltip.css'
+import './NodeTooltip.css'
+import '../Common.css'
 
-const Tooltip = ({ node, position }) => {
+const NodeTooltip = ({ node, position }) => {
   const visible = node ? 1 : 0
   const full_name = node && node.full_name ? node.full_name : ''
   const political_party = node && node.political_party ? node.political_party : ''
 
   return (
-    <div className="tooltip"
+    <div className="tooltip nodeTooltip"
       style={{
         left: position.x,
         top: position.y,
@@ -19,4 +20,4 @@ const Tooltip = ({ node, position }) => {
   );
 }
 
-export default Tooltip;
+export default NodeTooltip;

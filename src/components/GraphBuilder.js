@@ -38,7 +38,8 @@ function createEdge(account_name, out_mention) {
   return { 
     from:account_name,
     to: out_mention_account_name,
-    width: out_mention_count * edgeScale
+    width: out_mention_count * edgeScale,
+    mentions_count: out_mention_count
   }
 }
 
