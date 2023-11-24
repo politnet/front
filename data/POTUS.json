@@ -7,8 +7,14 @@
   "top_5_in_mentions": ["mattgaetz", "SenJohnThune", "SenJohnThune", "SenJohnThune", "SenJohnThune"],
   "top_5_out_mentions": ["SenJohnThune", "SenJohnThune", "SenJohnThune", "SenJohnThune", "SenJohnThune" ],
   "all_out_mentions": [
-    {"SenJohnThune": 5}, 
-    {"mattgaetz": 3}
+    {
+      "account_name": "SenJohnThune",
+      "mentions_count": 5
+    }, 
+    {
+      "account_name": "mattgaetz",
+      "mentions_count": 3
+    }
   ],
   "description": "Joe Biden, the 46th President of the United States, is a seasoned politician with a career spanning several decades. Widely recognized for his centrist approach, Biden has emphasized unity and bipartisanship in his leadership style, seeking to bridge the political divide in the country. His administration has focused on addressing pressing issues such as the COVID-19 pandemic, climate change, and economic recovery."
 }

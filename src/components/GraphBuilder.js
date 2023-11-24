@@ -8,15 +8,21 @@ const partyColors = {
   'Republicans-dark': '#A93226', // dark red
 };
 
+function findNodeByAccountName(nodes, account_name) {
+  return nodes.find(node => node['account_name'] === account_name)
+}
+
 function createNode(data) {
   return { 
-    id: data['account_name'],
+    id: Math.random(),
+    account_name: data['account_name'],
     full_name: data['full_name'],
     political_party: data['political_party'],
     positiveness: data['positiveness'],
     description: data['description'],
     top_5_in_mentions: data['top_5_in_mentions'],
     top_5_out_mentions: data['top_5_out_mentions'],
+    all_out_mentions: data['all_out_mentions'],
 
     shape: 'circularImage',
     image: data['profile_image_url'],
@@ -32,14 +38,14 @@ function createNode(data) {
   }
 }
 
-function createEdge(account_name, out_mention) {
-  let out_mention_account_name = Object.keys(out_mention)[0];
-  let out_mention_count = out_mention[out_mention_account_name];
+function createEdge(node_from, node_to, mentions_count) {
   return { 
-    from:account_name,
-    to: out_mention_account_name,
-    width: out_mention_count * edgeScale,
-    mentions_count: out_mention_count
+    from: node_from.id,
+    to: node_to.id,
+    from_account_name: node_from.account_name,
+    to_account_name: node_to.account_name,
+    width: mentions_count * edgeScale,
+    mentions_count: mentions_count
   }
 }
 
@@ -108,17 +114,17 @@ export function readGraph() {
     nodes.push(createNode(data))
   })
 
-  // Store nodes instead of account names
-  transformTopMentions(nodes)
-
   // Add edges
-  context.keys().forEach(key => {
-    const data = context(key)
-    const account_name = data['account_name']
-    data['all_out_mentions'].forEach(out_mention => {
-      edges.push(createEdge(account_name, out_mention))
+  nodes.forEach(node => {
+    node['all_out_mentions'].forEach(out_mention => {
+      let node_to = findNodeByAccountName(nodes, out_mention.account_name)
+      let mentions_count = out_mention.mentions_count
+      edges.push(createEdge(node, node_to, mentions_count))
     })
   })
+
+  // Store nodes instead of account names
+  transformTopMentions(nodes)
 
   resizeNodes(nodes, edges)
 
