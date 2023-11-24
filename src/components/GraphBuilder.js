@@ -53,10 +53,10 @@ function createEdge(node_from, node_to, mentions_count) {
 function transformTopMentions(nodes) {
   nodes.forEach(node => {
     node['top_5_in_mentions'] = node['top_5_in_mentions'].map(mention => {
-      return nodes.find(node => node['id'] === mention)
+      return nodes.find(node => node['account_name'] === mention)
     })
     node['top_5_out_mentions'] = node['top_5_out_mentions'].map(mention => {
-      return nodes.find(node => node['id'] === mention)
+      return nodes.find(node => node['account_name'] === mention)
     })
   })
 }
