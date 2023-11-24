@@ -4,6 +4,7 @@
     "political_party": "Republicans",
     "profile_image_url": "https://pbs.twimg.com/profile_images/596012379231617025/TtrAXbnA_400x400.jpg",
     "positiveness": 0.54,
+    "weighted_in_degree": 8,
     "top_5_in_mentions": [],
     "top_5_out_mentions": [],
     "all_out_mentions": [],

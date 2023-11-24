@@ -26,6 +26,7 @@ function createNode(data) {
 
     shape: 'circularImage',
     image: data['profile_image_url'],
+    value: data.weighted_in_degree * nodeScale,
     color: {
       border: partyColors[data['political_party']],
       highlight: { 
@@ -58,21 +59,6 @@ function transformTopMentions(nodes) {
       return nodes.find(node => node['id'] === mention)
     })
   })
-}
-
-function resizeNodes(nodes, edges) {
-  let inDegrees = {};
-  edges.forEach(edge => {
-    if (inDegrees[edge.to]) {
-      inDegrees[edge.to] += edge.width;
-    } else {
-      inDegrees[edge.to] = edge.width;
-    }
-  });
-
-  nodes.forEach(node => {
-    node.value = (inDegrees[node.id] * nodeScale) || nodeScale;
-  });
 }
 
 export function buildOptions() {
@@ -125,9 +111,7 @@ export function readGraph() {
 
   // Store nodes instead of account names
   transformTopMentions(nodes)
-
-  resizeNodes(nodes, edges)
-
+  
   return {
       nodes: nodes,
       edges: edges

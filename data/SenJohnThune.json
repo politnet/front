@@ -4,6 +4,7 @@
     "political_party": "Democrats",
     "profile_image_url": "https://pbs.twimg.com/profile_images/874276197357596672/kUuht00m_400x400.jpg",
     "positiveness": 0.21,
+    "weighted_in_degree": 2,
     "top_5_in_mentions": ["mattgaetz", "SenMikeLee"],
     "top_5_out_mentions": ["mattgaetz", "SenMikeLee", "POTUS"],
     "all_out_mentions": [
