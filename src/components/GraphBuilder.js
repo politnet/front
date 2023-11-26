@@ -9,31 +9,31 @@ const partyColors = {
 };
 
 function findNodeByAccountName(nodes, account_name) {
-  return nodes.find(node => node['account_name'] === account_name)
+  return nodes.find(node => node.account_name === account_name)
 }
 
 function createNode(data) {
   return { 
     id: Math.random(),
-    account_name: data['account_name'],
-    full_name: data['full_name'],
-    political_party: data['political_party'],
-    sentiment: data['sentiment'],
-    description: data['description'],
-    top_5_in_mentions: data['top_5_in_mentions'],
-    top_5_out_mentions: data['top_5_out_mentions'],
-    all_out_mentions: data['all_out_mentions'],
+    account_name: data.account_name,
+    full_name: data.full_name,
+    political_party: data.political_party,
+    sentiment: data.sentiment,
+    description: data.description,
+    top_5_in_mentions: data.top_5_in_mentions,
+    top_5_out_mentions: data.top_5_out_mentions,
+    all_out_mentions: data.all_out_mentions,
 
     shape: 'circularImage',
-    image: data['profile_image_url'],
+    image: data.profile_image_url,
     value: data.weighted_in_degree * nodeScale,
     color: {
-      border: partyColors[data['political_party']],
+      border: partyColors[data.political_party],
       highlight: { 
-        border: partyColors[data['political_party'] + '-dark'] 
+        border: partyColors[data.political_party + '-dark'] 
       },
       hover: { 
-        border: partyColors[data['political_party'] + '-dark']
+        border: partyColors[data.political_party + '-dark']
       },
     }
   }
@@ -52,11 +52,11 @@ function createEdge(node_from, node_to, mentions_count) {
 
 function transformTopMentions(nodes) {
   nodes.forEach(node => {
-    node['top_5_in_mentions'] = node['top_5_in_mentions'].map(mention => {
-      return nodes.find(node => node['account_name'] === mention)
+    node.top_5_in_mentions = node.top_5_in_mentions.map(mention => {
+      return nodes.find(node => node.account_name === mention)
     })
-    node['top_5_out_mentions'] = node['top_5_out_mentions'].map(mention => {
-      return nodes.find(node => node['account_name'] === mention)
+    node.top_5_out_mentions = node.top_5_out_mentions.map(mention => {
+      return nodes.find(node => node.account_name === mention)
     })
   })
 }
@@ -102,7 +102,7 @@ export function readGraph() {
 
   // Add edges
   nodes.forEach(node => {
-    node['all_out_mentions'].forEach(out_mention => {
+    node.all_out_mentions.forEach(out_mention => {
       let node_to = findNodeByAccountName(nodes, out_mention.account_name)
       let mentions_count = out_mention.mentions_count
       edges.push(createEdge(node, node_to, mentions_count))
