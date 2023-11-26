@@ -3,15 +3,15 @@ import "../Common.css"
 import MentionList from "./mention_list/MentionList";
 import React, { useEffect, useRef } from 'react';
 
-function getColor(positiveness) {
-  const red_dark = Math.floor((1 - positiveness) * 100);
-  const green_dark = Math.floor(positiveness * 100);
+function getColor(sentiment) {
+  const red_dark = Math.floor((1 - sentiment) * 100);
+  const green_dark = Math.floor(sentiment * 100);
   return `rgb(${red_dark}, ${green_dark}, 0)`;
 }
 
-function getLighterColor(positiveness) {
-  const red_light = Math.floor((1 - positiveness) * 200);
-  const green_light = Math.floor(positiveness * 200);
+function getLighterColor(sentiment) {
+  const red_light = Math.floor((1 - sentiment) * 200);
+  const green_light = Math.floor(sentiment * 200);
   return `rgb(${red_light}, ${green_light}, 0)`
 }
 
@@ -21,7 +21,7 @@ const Details = ({ node, nodeSetter }) => {
     const full_name = node && node.full_name ? node.full_name : ''
     const political_party = node && node.political_party ? node.political_party : ''
     const profile_image_url = node && node.image ? node.image : ''
-    const positiveness = node && node.positiveness ? node.positiveness : ''
+    const sentiment = node && node.sentiment ? node.sentiment : ''
     const description = node && node.description ? node.description : ''
     const top_5_in_mentions = node && node.top_5_in_mentions ? node.top_5_in_mentions : []
     const top_5_out_mentions = node && node.top_5_out_mentions ? node.top_5_out_mentions : []
@@ -47,8 +47,8 @@ const Details = ({ node, nodeSetter }) => {
         <p>{political_party}</p>
         <div className="stats">
           <h5>How positive are his statements? </h5>
-          <p style={{background: `linear-gradient(to bottom, ${getLighterColor(positiveness)}, ${getColor(positiveness)})`}}>
-            {positiveness}
+          <p style={{background: `linear-gradient(to bottom, ${getLighterColor(sentiment)}, ${getColor(sentiment)})`}}>
+            {sentiment}
           </p>
         </div>
         <div className="description">

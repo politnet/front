@@ -3,7 +3,7 @@
   "full_name": "Joe Biden",
   "political_party": "Democrats",
   "profile_image_url": "https://pbs.twimg.com/profile_images/1380530524779859970/TfwVAbyX_400x400.jpg",
-  "positiveness": 0.74,
+  "sentiment": 0.74,
   "weighted_in_degree": 8,
   "top_5_in_mentions": ["mattgaetz", "SenJohnThune", "SenJohnThune", "SenJohnThune", "SenJohnThune"],
   "top_5_out_mentions": ["SenJohnThune", "SenJohnThune", "SenJohnThune", "SenJohnThune", "SenJohnThune" ],

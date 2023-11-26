@@ -3,7 +3,7 @@
     "full_name": "Mike Lee",
     "political_party": "Democrats",
     "profile_image_url": "https://pbs.twimg.com/profile_images/1235299656063733760/b1RnM8w3_400x400.jpg",
-    "positiveness": 0.43,
+    "sentiment": 0.43,
     "weighted_in_degree": 7,
     "top_5_in_mentions": ["mattgaetz", "SenJohnThune"],
     "top_5_out_mentions": [],

@@ -18,7 +18,7 @@ function createNode(data) {
     account_name: data['account_name'],
     full_name: data['full_name'],
     political_party: data['political_party'],
-    positiveness: data['positiveness'],
+    sentiment: data['sentiment'],
     description: data['description'],
     top_5_in_mentions: data['top_5_in_mentions'],
     top_5_out_mentions: data['top_5_out_mentions'],
