@@ -1,13 +1,18 @@
 import "./Details.css"
 import "../Common.css"
-import { ReactComponent as PositivenessIcon } from './resources/positivness.svg'
 import MentionList from "./mention_list/MentionList";
 import React, { useEffect, useRef } from 'react';
 
-function getPositivenessColor(positiveness) {
-  const red = Math.floor((1 - positiveness) * 200);
-  const green = Math.floor(positiveness * 200);
-  return `rgb(${red}, ${green}, 0)`;
+function getColor(positiveness) {
+  const red_dark = Math.floor((1 - positiveness) * 100);
+  const green_dark = Math.floor(positiveness * 100);
+  return `rgb(${red_dark}, ${green_dark}, 0)`;
+}
+
+function getLighterColor(positiveness) {
+  const red_light = Math.floor((1 - positiveness) * 200);
+  const green_light = Math.floor(positiveness * 200);
+  return `rgb(${red_light}, ${green_light}, 0)`
 }
 
 const Details = ({ node, nodeSetter }) => {
@@ -41,8 +46,10 @@ const Details = ({ node, nodeSetter }) => {
         <h2>{full_name}</h2>
         <p>{political_party}</p>
         <div className="stats">
-          <PositivenessIcon style={{ fill: getPositivenessColor(positiveness) }} className="stats-icon" alt="Positiveness" title="Positiveness Score"/>
-          <p>{positiveness}</p>
+          <h5>How positive are his statements? </h5>
+          <p style={{background: `linear-gradient(to bottom, ${getLighterColor(positiveness)}, ${getColor(positiveness)})`}}>
+            {positiveness}
+          </p>
         </div>
         <div className="description">
           <p>{description}</p>
