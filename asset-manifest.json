@@ -1,14 +1,13 @@
 {
   "files": {
-    "main.css": "/front/static/css/main.5366308b.css",
-    "main.js": "/front/static/js/main.1d17a263.js",
+    "main.css": "/front/static/css/main.64992499.css",
+    "main.js": "/front/static/js/main.cde638b1.js",
     "index.html": "/front/index.html",
-    "static/media/positivness.svg": "/front/static/media/positivness.ec28931d26c6133a523b68c6c628ae74.svg",
-    "main.5366308b.css.map": "/front/static/css/main.5366308b.css.map",
-    "main.1d17a263.js.map": "/front/static/js/main.1d17a263.js.map"
+    "main.64992499.css.map": "/front/static/css/main.64992499.css.map",
+    "main.cde638b1.js.map": "/front/static/js/main.cde638b1.js.map"
   },
   "entrypoints": [
-    "static/css/main.5366308b.css",
-    "static/js/main.1d17a263.js"
+    "static/css/main.64992499.css",
+    "static/js/main.cde638b1.js"
   ]
 }
