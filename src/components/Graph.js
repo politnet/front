@@ -61,6 +61,9 @@ const GraphComponent = () => {
       setDetailsNode(null);
     }
     
+    const cursorPointer = (network) => network.canvas.body.container.style.cursor = 'pointer'
+    const cursorBlur = (network) => network.canvas.body.container.style.cursor = 'default'
+    
     return (
       <>
         <Graph
@@ -76,6 +79,10 @@ const GraphComponent = () => {
           }}
           getNetwork={(network) => {
             network.fit()
+            network.on("hoverNode", () => cursorPointer(network));
+            network.on("blurNode", () => cursorBlur(network));
+            network.on("hoverEdge", () => cursorPointer(network));
+            network.on("blurEdge", () => cursorBlur(network));
           }}
         />
         <NodeTooltip node={nodeTooltip} position={nodeTooltipPosition} />
