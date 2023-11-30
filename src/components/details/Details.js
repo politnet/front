@@ -3,6 +3,8 @@ import "../Common.css"
 import MentionList from "./mention_list/MentionList";
 import React, { useEffect, useRef } from 'react';
 
+const lorem_ipsum = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+
 function getColor(sentiment) {
   const red_dark = Math.floor((1 - sentiment) * 100);
   const green_dark = Math.floor(sentiment * 100);
@@ -22,7 +24,7 @@ const Details = ({ node, nodeSetter }) => {
     const political_party = node && node.political_party ? node.political_party : ''
     const profile_image_url = node && node.image ? node.image : ''
     const sentiment = node && node.sentiment ? node.sentiment : ''
-    const description = node && node.description ? node.description : ''
+    const description = node && node.description ? node.description : lorem_ipsum
     const top_5_in_mentions = node && node.top_5_in_mentions ? node.top_5_in_mentions : []
     const top_5_out_mentions = node && node.top_5_out_mentions ? node.top_5_out_mentions : []
 
