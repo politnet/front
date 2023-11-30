@@ -78,11 +78,15 @@ const GraphComponent = () => {
             deselectNode: handleDeselectNode,
           }}
           getNetwork={(network) => {
-            network.on("stabilizationIterationsDone", function (params) {
+            network.on("stabilizationIterationsDone", function (_) {
               network.stopSimulation();
             });
-            
             network.stabilize(100); 
+
+            network.on("dragEnd", function (_) {
+              network.setOptions({ physics: false });
+            });
+
             network.fit()
             network.on("hoverNode", () => cursorPointer(network));
             network.on("blurNode", () => cursorBlur(network));
