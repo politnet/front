@@ -1,0 +1,41 @@
+{
+    "account_name": "CarlyFiorina",
+    "full_name": "Carly Fiorina",
+    "political_party": "Republican",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1313537938580533250/yOns-x5r_400x400.jpg",
+    "sentiment": 5.5711052769755804,
+    "in_degree": 1,
+    "out_degree": 5,
+    "top_5_in_mentions": [
+        "MittRomney"
+    ],
+    "top_5_out_mentions": [
+        "POTUS",
+        "Liz_Cheney",
+        "KamalaHarris",
+        "realDonaldTrump",
+        "MittRomney"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "POTUS",
+            "mentions_count": 3
+        },
+        {
+            "account_name": "KamalaHarris",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "realDonaldTrump",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "Liz_Cheney",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "MittRomney",
+            "mentions_count": 1
+        }
+    ]
+}

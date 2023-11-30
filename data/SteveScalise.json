@@ -1,0 +1,25 @@
+{
+    "account_name": "SteveScalise",
+    "full_name": "Steve Scalise",
+    "political_party": "Republican",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/744267613841260544/GdM7XCZM_400x400.jpg",
+    "sentiment": 5.310543169492985,
+    "in_degree": 5,
+    "out_degree": 1,
+    "top_5_in_mentions": [
+        "EliseStefanik",
+        "RonJohnsonWI",
+        "DevinNunes",
+        "MittRomney",
+        "ScottWalker"
+    ],
+    "top_5_out_mentions": [
+        "Jim_Jordan"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "Jim_Jordan",
+            "mentions_count": 1
+        }
+    ]
+}

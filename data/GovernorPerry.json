@@ -1,0 +1,58 @@
+{
+    "account_name": "GovernorPerry",
+    "full_name": "Rick Perry",
+    "political_party": "Republican",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/467390551830970368/80rkMI5v_normal.jpeg",
+    "sentiment": 5.654094862368871,
+    "in_degree": 2,
+    "out_degree": 9,
+    "top_5_in_mentions": [
+        "MittRomney",
+        "SarahPalinUSA"
+    ],
+    "top_5_out_mentions": [
+        "realDonaldTrump",
+        "POTUS",
+        "JohnCornyn",
+        "VP",
+        "KamalaHarris"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "POTUS",
+            "mentions_count": 4
+        },
+        {
+            "account_name": "realDonaldTrump",
+            "mentions_count": 25
+        },
+        {
+            "account_name": "GavinNewsom",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "tedcruz",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "HillaryClinton",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "VP",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "KamalaHarris",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "JohnCornyn",
+            "mentions_count": 3
+        },
+        {
+            "account_name": "Mike_Pence",
+            "mentions_count": 1
+        }
+    ]
+}

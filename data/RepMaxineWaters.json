@@ -1,0 +1,42 @@
+{
+    "account_name": "RepMaxineWaters",
+    "full_name": "Maxine Waters",
+    "political_party": "Democratic",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/851658655036583937/Jy4zSIar_400x400.jpg",
+    "sentiment": 5.397782685914654,
+    "in_degree": 2,
+    "out_degree": 5,
+    "top_5_in_mentions": [
+        "RashidaTlaib",
+        "RepAdamSchiff"
+    ],
+    "top_5_out_mentions": [
+        "SpeakerPelosi",
+        "POTUS",
+        "VP",
+        "GavinNewsom",
+        "realDonaldTrump"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "SpeakerPelosi",
+            "mentions_count": 4
+        },
+        {
+            "account_name": "POTUS",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "VP",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "GavinNewsom",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "realDonaldTrump",
+            "mentions_count": 1
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "account_name": "kevinomccarthy",
+    "full_name": "Kevin McCarthy",
+    "political_party": "Republican",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1620141826970624022/8t_H9lqP_400x400.jpg",
+    "sentiment": 5.574641051567241,
+    "in_degree": 3,
+    "out_degree": 6,
+    "top_5_in_mentions": [
+        "MarkPocan",
+        "EliseStefanik",
+        "BillCassidy"
+    ],
+    "top_5_out_mentions": [
+        "realDonaldTrump",
+        "POTUS",
+        "HawleyMO",
+        "NancyMace",
+        "SpeakerPelosi"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "realDonaldTrump",
+            "mentions_count": 13
+        },
+        {
+            "account_name": "POTUS",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "HawleyMO",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "NancyMace",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "SpeakerPelosi",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "BarackObama",
+            "mentions_count": 1
+        }
+    ]
+}

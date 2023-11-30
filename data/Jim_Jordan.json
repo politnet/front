@@ -1,0 +1,18 @@
+{
+    "account_name": "Jim_Jordan",
+    "full_name": "Rep. Jim Jordan",
+    "political_party": "Republican",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/596012379231617025/TtrAXbnA_400x400.jpg",
+    "sentiment": 5.337701543739277,
+    "in_degree": 12,
+    "out_degree": 0,
+    "top_5_in_mentions": [
+        "tedcruz",
+        "EliseStefanik",
+        "tedlieu",
+        "SenatorBraun",
+        "RepAdamSchiff"
+    ],
+    "top_5_out_mentions": [],
+    "all_out_mentions": []
+}

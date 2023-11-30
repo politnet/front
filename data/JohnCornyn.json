@@ -1,0 +1,35 @@
+{
+    "account_name": "JohnCornyn",
+    "full_name": "Senator John Cornyn",
+    "political_party": "Republican",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1246564218259767296/iwEbEtCj_400x400.jpg",
+    "sentiment": 5.343829304278741,
+    "in_degree": 9,
+    "out_degree": 3,
+    "top_5_in_mentions": [
+        "ChrisCoons",
+        "SenatorLankford",
+        "GovernorPerry",
+        "LindseyGrahamSC",
+        "SenJohnBarrasso"
+    ],
+    "top_5_out_mentions": [
+        "POTUS",
+        "SenMarkKelly",
+        "LindseyGrahamSC"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "SenMarkKelly",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "POTUS",
+            "mentions_count": 4
+        },
+        {
+            "account_name": "LindseyGrahamSC",
+            "mentions_count": 1
+        }
+    ]
+}

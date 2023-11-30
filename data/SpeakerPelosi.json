@@ -1,0 +1,53 @@
+{
+    "account_name": "SpeakerPelosi",
+    "full_name": "Nancy Pelosi",
+    "political_party": "Democratic",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1114294290375688193/P9mcJNGb_normal.png",
+    "sentiment": 5.547104269532401,
+    "in_degree": 17,
+    "out_degree": 7,
+    "top_5_in_mentions": [
+        "Liz_Cheney",
+        "RepMaxineWaters",
+        "SenSchumer",
+        "RepAdamSchiff",
+        "GavinNewsom"
+    ],
+    "top_5_out_mentions": [
+        "POTUS",
+        "SenSchumer",
+        "VP",
+        "HillaryClinton",
+        "BarackObama"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "POTUS",
+            "mentions_count": 28
+        },
+        {
+            "account_name": "VP",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "HillaryClinton",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "SenSchumer",
+            "mentions_count": 3
+        },
+        {
+            "account_name": "RepRaskin",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "BarackObama",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "GavinNewsom",
+            "mentions_count": 1
+        }
+    ]
+}

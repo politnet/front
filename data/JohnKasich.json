@@ -1,0 +1,39 @@
+{
+    "account_name": "JohnKasich",
+    "full_name": "John Kasich",
+    "political_party": "Republican",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/942444168168792065/9Y7MgbD6_400x400.jpg",
+    "sentiment": 5.482285149818911,
+    "in_degree": 0,
+    "out_degree": 5,
+    "top_5_in_mentions": [],
+    "top_5_out_mentions": [
+        "realDonaldTrump",
+        "Liz_Cheney",
+        "BernieSanders",
+        "SenatorTimScott",
+        "KamalaHarris"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "realDonaldTrump",
+            "mentions_count": 24
+        },
+        {
+            "account_name": "Liz_Cheney",
+            "mentions_count": 7
+        },
+        {
+            "account_name": "BernieSanders",
+            "mentions_count": 3
+        },
+        {
+            "account_name": "SenatorTimScott",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "KamalaHarris",
+            "mentions_count": 1
+        }
+    ]
+}

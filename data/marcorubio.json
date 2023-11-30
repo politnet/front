@@ -1,0 +1,35 @@
+{
+    "account_name": "marcorubio",
+    "full_name": "Marco Rubio",
+    "political_party": "Republican",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1610401509295923204/VSkG7q2Z_400x400.jpg",
+    "sentiment": 5.336660516605185,
+    "in_degree": 9,
+    "out_degree": 3,
+    "top_5_in_mentions": [
+        "ChrisChristie",
+        "SenatorCollins",
+        "AOC",
+        "SenGillibrand",
+        "ossoff"
+    ],
+    "top_5_out_mentions": [
+        "POTUS",
+        "SenGillibrand",
+        "amyklobuchar"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "POTUS",
+            "mentions_count": 8
+        },
+        {
+            "account_name": "SenGillibrand",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "amyklobuchar",
+            "mentions_count": 1
+        }
+    ]
+}

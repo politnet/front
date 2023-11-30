@@ -1,0 +1,58 @@
+{
+    "account_name": "JerryMoran",
+    "full_name": "Senator Jerry Moran",
+    "political_party": "Republican",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1250061698716884992/yX1oOxBD_400x400.jpg",
+    "sentiment": 5.523120792918861,
+    "in_degree": 2,
+    "out_degree": 9,
+    "top_5_in_mentions": [
+        "ChrisCoons",
+        "SenJohnMcCain"
+    ],
+    "top_5_out_mentions": [
+        "POTUS",
+        "HawleyMO",
+        "SteveDaines",
+        "SenatorBraun",
+        "SenThomTillis"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "POTUS",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "HawleyMO",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "SenatorBraun",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "SenThomTillis",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "MartinHeinrich",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "SenatorCollins",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "SteveDaines",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "SenDuckworth",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "JohnCornyn",
+            "mentions_count": 1
+        }
+    ]
+}

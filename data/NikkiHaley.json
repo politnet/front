@@ -1,0 +1,18 @@
+{
+    "account_name": "NikkiHaley",
+    "full_name": "Nikki Haley",
+    "political_party": "Republican",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1625445934321524736/0vZ660jr_normal.png",
+    "sentiment": 5.438698341994559,
+    "in_degree": 9,
+    "out_degree": 0,
+    "top_5_in_mentions": [
+        "RonJohnsonWI",
+        "RoKhanna",
+        "MittRomney",
+        "LindseyGrahamSC",
+        "NancyMace"
+    ],
+    "top_5_out_mentions": [],
+    "all_out_mentions": []
+}

@@ -1,0 +1,53 @@
+{
+    "account_name": "CoryBooker",
+    "full_name": "Cory Booker",
+    "political_party": "Democratic",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1296891138532679680/8axGb9ml_400x400.jpg",
+    "sentiment": 5.566152892561996,
+    "in_degree": 10,
+    "out_degree": 7,
+    "top_5_in_mentions": [
+        "SenGillibrand",
+        "DebHaalandNM",
+        "CortezMasto",
+        "ReverendWarnock",
+        "BernieSanders"
+    ],
+    "top_5_out_mentions": [
+        "POTUS",
+        "BarackObama",
+        "CortezMasto",
+        "KamalaHarris",
+        "ReverendWarnock"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "BarackObama",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "POTUS",
+            "mentions_count": 3
+        },
+        {
+            "account_name": "SenGillibrand",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "CortezMasto",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "ossoff",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "KamalaHarris",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "ReverendWarnock",
+            "mentions_count": 2
+        }
+    ]
+}

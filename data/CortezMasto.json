@@ -1,0 +1,51 @@
+{
+    "account_name": "CortezMasto",
+    "full_name": "Catherine Cortez Masto",
+    "political_party": "Democratic",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1592599599570567169/g50vser6_400x400.jpg",
+    "sentiment": 5.526345149649757,
+    "in_degree": 3,
+    "out_degree": 7,
+    "top_5_in_mentions": [
+        "SenGillibrand",
+        "CoryBooker",
+        "timkaine"
+    ],
+    "top_5_out_mentions": [
+        "BarackObama",
+        "LindseyGrahamSC",
+        "CoryBooker",
+        "PeteButtigieg",
+        "tedcruz"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "CoryBooker",
+            "mentions_count": 3
+        },
+        {
+            "account_name": "BarackObama",
+            "mentions_count": 12
+        },
+        {
+            "account_name": "LindseyGrahamSC",
+            "mentions_count": 10
+        },
+        {
+            "account_name": "PeteButtigieg",
+            "mentions_count": 3
+        },
+        {
+            "account_name": "tedcruz",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "ossoff",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "KamalaHarris",
+            "mentions_count": 1
+        }
+    ]
+}

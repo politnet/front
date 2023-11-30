@@ -1,0 +1,77 @@
+{
+    "account_name": "LindseyGrahamSC",
+    "full_name": "Lindsey Graham",
+    "political_party": "Republican",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1235299656063733760/b1RnM8w3_400x400.jpg",
+    "sentiment": 5.389027944711528,
+    "in_degree": 13,
+    "out_degree": 13,
+    "top_5_in_mentions": [
+        "CortezMasto",
+        "MittRomney",
+        "LindseyGrahamSC",
+        "SenJohnThune",
+        "ChrisCoons"
+    ],
+    "top_5_out_mentions": [
+        "JohnCornyn",
+        "tedcruz",
+        "SenatorTimScott",
+        "realDonaldTrump",
+        "SenatorCollins"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "SenatorTimScott",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "realDonaldTrump",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "SenatorCollins",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "SenJohnThune",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "ChrisCoons",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "LindseyGrahamSC",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "NikkiHaley",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "AOC",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "GovRonDeSantis",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "RandPaul",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "SenMikeLee",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "JohnCornyn",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "tedcruz",
+            "mentions_count": 2
+        }
+    ]
+}

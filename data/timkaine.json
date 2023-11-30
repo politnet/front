@@ -1,0 +1,51 @@
+{
+    "account_name": "timkaine",
+    "full_name": "Tim Kaine",
+    "political_party": "Democratic",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/922472118377476096/XqCk_uDv_400x400.jpg",
+    "sentiment": 5.497768113027311,
+    "in_degree": 3,
+    "out_degree": 7,
+    "top_5_in_mentions": [
+        "SenatorCollins",
+        "RepAdamSchiff",
+        "SenJohnMcCain"
+    ],
+    "top_5_out_mentions": [
+        "POTUS",
+        "ReverendWarnock",
+        "SenWarren",
+        "SpeakerPelosi",
+        "SenMarkKelly"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "POTUS",
+            "mentions_count": 13
+        },
+        {
+            "account_name": "SenWarren",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "SpeakerPelosi",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "ReverendWarnock",
+            "mentions_count": 5
+        },
+        {
+            "account_name": "SenMarkKelly",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "CortezMasto",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "marcorubio",
+            "mentions_count": 1
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "account_name": "HawleyMO",
+    "full_name": "Josh Hawley",
+    "political_party": "Republican",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1097246042934992898/YqXTdt3v_400x400.jpg",
+    "sentiment": 5.3491465295629865,
+    "in_degree": 10,
+    "out_degree": 3,
+    "top_5_in_mentions": [
+        "SenatorBraun",
+        "JerryMoran",
+        "SenGillibrand",
+        "tedcruz",
+        "HawleyMO"
+    ],
+    "top_5_out_mentions": [
+        "SenatorLujan",
+        "HawleyMO",
+        "SenGillibrand"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "SenatorLujan",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "HawleyMO",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "SenGillibrand",
+            "mentions_count": 1
+        }
+    ]
+}

@@ -1,11 +1,28 @@
 {
     "account_name": "mattgaetz",
     "full_name": "Matt Gaetz",
-    "political_party": "Republicans",
-    "profile_image_url": "https://pbs.twimg.com/profile_images/596012379231617025/TtrAXbnA_400x400.jpg",
-    "sentiment": 0.54,
-    "weighted_in_degree": 8,
-    "top_5_in_mentions": [],
-    "top_5_out_mentions": [],
-    "all_out_mentions": []
-  }
+    "political_party": "Republican",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1675938292364111877/HJVx61yt_400x400.jpg",
+    "sentiment": 5.38818074722315,
+    "in_degree": 3,
+    "out_degree": 2,
+    "top_5_in_mentions": [
+        "mtgreenee",
+        "NancyMace",
+        "RoKhanna"
+    ],
+    "top_5_out_mentions": [
+        "mtgreenee",
+        "AOC"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "mtgreenee",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "AOC",
+            "mentions_count": 1
+        }
+    ]
+}

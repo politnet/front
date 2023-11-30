@@ -1,0 +1,24 @@
+{
+    "account_name": "Mike_Pence",
+    "full_name": "Mike Pence",
+    "political_party": "Republican",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1372291427833683972/sCIeF9RC_400x400.jpg",
+    "sentiment": 5.52776916892039,
+    "in_degree": 4,
+    "out_degree": 1,
+    "top_5_in_mentions": [
+        "RepAdamSchiff",
+        "tedlieu",
+        "realDonaldTrump",
+        "GovernorPerry"
+    ],
+    "top_5_out_mentions": [
+        "POTUS"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "POTUS",
+            "mentions_count": 3
+        }
+    ]
+}

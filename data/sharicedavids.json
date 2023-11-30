@@ -1,0 +1,51 @@
+{
+    "account_name": "sharicedavids",
+    "full_name": "Sharice Davids",
+    "political_party": "Democratic",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/963886151219236864/L2Z88JB__400x400.jpg",
+    "sentiment": 5.527043965771616,
+    "in_degree": 3,
+    "out_degree": 7,
+    "top_5_in_mentions": [
+        "DebHaalandNM",
+        "MartinHeinrich",
+        "sharicedavids"
+    ],
+    "top_5_out_mentions": [
+        "DebHaalandNM",
+        "KamalaHarris",
+        "POTUS",
+        "PeteButtigieg",
+        "BarackObama"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "BarackObama",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "KamalaHarris",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "DebHaalandNM",
+            "mentions_count": 4
+        },
+        {
+            "account_name": "POTUS",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "sharicedavids",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "ewarren",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "PeteButtigieg",
+            "mentions_count": 2
+        }
+    ]
+}

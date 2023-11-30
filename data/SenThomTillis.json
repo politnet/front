@@ -1,0 +1,33 @@
+{
+    "account_name": "SenThomTillis",
+    "full_name": "Senator Thom Tillis",
+    "political_party": "Republican",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1501284630695194627/WJmQ4wTR_400x400.jpg",
+    "sentiment": 5.494116380500191,
+    "in_degree": 3,
+    "out_degree": 3,
+    "top_5_in_mentions": [
+        "ChrisCoons",
+        "SenatorBraun",
+        "JerryMoran"
+    ],
+    "top_5_out_mentions": [
+        "RashidaTlaib",
+        "SenatorCollins",
+        "ChrisCoons"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "SenatorCollins",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "ChrisCoons",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "RashidaTlaib",
+            "mentions_count": 2
+        }
+    ]
+}

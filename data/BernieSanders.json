@@ -1,0 +1,49 @@
+{
+    "account_name": "BernieSanders",
+    "full_name": "Bernie Sanders",
+    "political_party": "Democratic",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1097820307388334080/9ddg5F6v_normal.png",
+    "sentiment": 5.471365812229762,
+    "in_degree": 11,
+    "out_degree": 6,
+    "top_5_in_mentions": [
+        "RoKhanna",
+        "Liz_Cheney",
+        "PramilaJayapal",
+        "JohnKasich",
+        "IlhanMN"
+    ],
+    "top_5_out_mentions": [
+        "AOC",
+        "RashidaTlaib",
+        "CoryBooker",
+        "IlhanMN",
+        "ReverendWarnock"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "RashidaTlaib",
+            "mentions_count": 6
+        },
+        {
+            "account_name": "AOC",
+            "mentions_count": 7
+        },
+        {
+            "account_name": "CoryBooker",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "IlhanMN",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "ReverendWarnock",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "AyannaPressley",
+            "mentions_count": 1
+        }
+    ]
+}

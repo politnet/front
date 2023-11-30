@@ -1,0 +1,49 @@
+{
+    "account_name": "NancyMace",
+    "full_name": "Nancy Mace",
+    "political_party": "Republican",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1592954456483762181/uhnU3tIp_400x400.jpg",
+    "sentiment": 5.42486568941143,
+    "in_degree": 1,
+    "out_degree": 7,
+    "top_5_in_mentions": [
+        "kevinomccarthy"
+    ],
+    "top_5_out_mentions": [
+        "mattgaetz",
+        "RoKhanna",
+        "Jim_Jordan",
+        "NikkiHaley",
+        "RandPaul"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "RoKhanna",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "mattgaetz",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "Jim_Jordan",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "NikkiHaley",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "RandPaul",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "SenatorTimScott",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "POTUS",
+            "mentions_count": 1
+        }
+    ]
+}

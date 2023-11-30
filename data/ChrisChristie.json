@@ -1,0 +1,57 @@
+{
+    "account_name": "ChrisChristie",
+    "full_name": "Chris Christie",
+    "political_party": "Republican",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/614760759965265920/8ahsjx48_400x400.jpg",
+    "sentiment": 5.533954635108485,
+    "in_degree": 1,
+    "out_degree": 9,
+    "top_5_in_mentions": [
+        "MittRomney"
+    ],
+    "top_5_out_mentions": [
+        "marcorubio",
+        "HillaryClinton",
+        "BarackObama",
+        "realDonaldTrump",
+        "tedcruz"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "POTUS",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "marcorubio",
+            "mentions_count": 19
+        },
+        {
+            "account_name": "BarackObama",
+            "mentions_count": 12
+        },
+        {
+            "account_name": "HillaryClinton",
+            "mentions_count": 18
+        },
+        {
+            "account_name": "tedcruz",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "realDonaldTrump",
+            "mentions_count": 4
+        },
+        {
+            "account_name": "LindseyGrahamSC",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "NikkiHaley",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "SenJohnMcCain",
+            "mentions_count": 1
+        }
+    ]
+}

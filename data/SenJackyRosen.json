@@ -1,0 +1,45 @@
+{
+    "account_name": "SenJackyRosen",
+    "full_name": "Senator Jacky Rosen",
+    "political_party": "Democratic",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1520041466109825025/Rpk8egu1_400x400.jpg",
+    "sentiment": 5.513664923494087,
+    "in_degree": 5,
+    "out_degree": 5,
+    "top_5_in_mentions": [
+        "SenatorLankford",
+        "SenatorCollins",
+        "SenatorLujan",
+        "SenWarren",
+        "SenJohnBarrasso"
+    ],
+    "top_5_out_mentions": [
+        "SenatorLankford",
+        "POTUS",
+        "SenWarren",
+        "marcorubio",
+        "SenatorCollins"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "SenatorLankford",
+            "mentions_count": 4
+        },
+        {
+            "account_name": "SenWarren",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "marcorubio",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "POTUS",
+            "mentions_count": 3
+        },
+        {
+            "account_name": "SenatorCollins",
+            "mentions_count": 1
+        }
+    ]
+}

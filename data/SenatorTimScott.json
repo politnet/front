@@ -1,0 +1,25 @@
+{
+    "account_name": "SenatorTimScott",
+    "full_name": "Tim Scott",
+    "political_party": "Republican",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1559198679084449792/Ct9DQdw1_400x400.jpg",
+    "sentiment": 5.495596023413549,
+    "in_degree": 8,
+    "out_degree": 1,
+    "top_5_in_mentions": [
+        "SteveDaines",
+        "SenatorLankford",
+        "LindseyGrahamSC",
+        "NancyMace",
+        "SenJohnThune"
+    ],
+    "top_5_out_mentions": [
+        "SenatorLankford"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "SenatorLankford",
+            "mentions_count": 1
+        }
+    ]
+}

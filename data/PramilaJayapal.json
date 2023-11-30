@@ -1,0 +1,63 @@
+{
+    "account_name": "PramilaJayapal",
+    "full_name": "Pramila Jayapal",
+    "political_party": "Democratic",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1677366295430406154/wy0ltZGg_400x400.jpg",
+    "sentiment": 5.377981933593752,
+    "in_degree": 3,
+    "out_degree": 10,
+    "top_5_in_mentions": [
+        "ewarren",
+        "DebHaalandNM",
+        "RoKhanna"
+    ],
+    "top_5_out_mentions": [
+        "POTUS",
+        "BernieSanders",
+        "ewarren",
+        "AOC",
+        "RashidaTlaib"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "SenWarren",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "CoryBooker",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "BernieSanders",
+            "mentions_count": 5
+        },
+        {
+            "account_name": "POTUS",
+            "mentions_count": 9
+        },
+        {
+            "account_name": "ewarren",
+            "mentions_count": 3
+        },
+        {
+            "account_name": "AOC",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "RashidaTlaib",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "MarkPocan",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "RoKhanna",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "KamalaHarris",
+            "mentions_count": 1
+        }
+    ]
+}

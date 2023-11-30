@@ -1,0 +1,74 @@
+{
+    "account_name": "SenJohnMcCain",
+    "full_name": "John McCain",
+    "political_party": "Republican",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/898243253362929664/y1gCTcz1_400x400.jpg",
+    "sentiment": 5.493774717514135,
+    "in_degree": 2,
+    "out_degree": 13,
+    "top_5_in_mentions": [
+        "MittRomney",
+        "ChrisChristie"
+    ],
+    "top_5_out_mentions": [
+        "POTUS",
+        "ChrisCoons",
+        "MittRomney",
+        "amyklobuchar",
+        "SenGillibrand"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "POTUS",
+            "mentions_count": 20
+        },
+        {
+            "account_name": "MittRomney",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "SenGillibrand",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "SenSchumer",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "LindseyGrahamSC",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "amyklobuchar",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "SenatorCollins",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "JerryMoran",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "ChrisCoons",
+            "mentions_count": 4
+        },
+        {
+            "account_name": "timkaine",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "SenatorTimScott",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "SenDuckworth",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "NikkiHaley",
+            "mentions_count": 1
+        }
+    ]
+}

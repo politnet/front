@@ -1,0 +1,65 @@
+{
+    "account_name": "ChrisCoons",
+    "full_name": "Senator Chris Coons",
+    "political_party": "Democratic",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1010166727529893888/O-lZLomM_400x400.jpg",
+    "sentiment": 5.56813390573621,
+    "in_degree": 7,
+    "out_degree": 10,
+    "top_5_in_mentions": [
+        "SenJohnMcCain",
+        "SenatorLankford",
+        "PeteButtigieg",
+        "LindseyGrahamSC",
+        "SenTomCotton"
+    ],
+    "top_5_out_mentions": [
+        "POTUS",
+        "SenThomTillis",
+        "JerryMoran",
+        "JohnCornyn",
+        "VP"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "POTUS",
+            "mentions_count": 55
+        },
+        {
+            "account_name": "SenThomTillis",
+            "mentions_count": 10
+        },
+        {
+            "account_name": "SenatorLankford",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "JohnCornyn",
+            "mentions_count": 5
+        },
+        {
+            "account_name": "SenMarkKelly",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "VP",
+            "mentions_count": 5
+        },
+        {
+            "account_name": "JerryMoran",
+            "mentions_count": 6
+        },
+        {
+            "account_name": "LindseyGrahamSC",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "SenatorBraun",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "amyklobuchar",
+            "mentions_count": 1
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "account_name": "DevinNunes",
+    "full_name": "Devin Nunes",
+    "political_party": "Republican",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/738510058183593985/whpmEX7p_400x400.jpg",
+    "sentiment": 5.43463189476115,
+    "in_degree": 1,
+    "out_degree": 6,
+    "top_5_in_mentions": [
+        "DevinNunes"
+    ],
+    "top_5_out_mentions": [
+        "realDonaldTrump",
+        "SteveScalise",
+        "EliseStefanik",
+        "LindseyGrahamSC",
+        "DevinNunes"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "realDonaldTrump",
+            "mentions_count": 10
+        },
+        {
+            "account_name": "EliseStefanik",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "LindseyGrahamSC",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "DevinNunes",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "SteveScalise",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "Jim_Jordan",
+            "mentions_count": 1
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "account_name": "ewarren",
+    "full_name": "Elizabeth Warren",
+    "political_party": "Democratic",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1640305909179068417/wUvC5bjd_400x400.jpg",
+    "sentiment": 5.387813219039028,
+    "in_degree": 8,
+    "out_degree": 6,
+    "top_5_in_mentions": [
+        "AyannaPressley",
+        "PramilaJayapal",
+        "Liz_Cheney",
+        "SenMikeLee",
+        "ReverendWarnock"
+    ],
+    "top_5_out_mentions": [
+        "KamalaHarris",
+        "AyannaPressley",
+        "PramilaJayapal",
+        "AOC",
+        "IlhanMN"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "AyannaPressley",
+            "mentions_count": 6
+        },
+        {
+            "account_name": "KamalaHarris",
+            "mentions_count": 7
+        },
+        {
+            "account_name": "PramilaJayapal",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "AOC",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "IlhanMN",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "ReverendWarnock",
+            "mentions_count": 2
+        }
+    ]
+}

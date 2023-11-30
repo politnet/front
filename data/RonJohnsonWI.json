@@ -1,0 +1,31 @@
+{
+    "account_name": "RonJohnsonWI",
+    "full_name": "Ron Johnson",
+    "political_party": "Republican",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1522237634134917121/Wn9Dljgg_400x400.jpg",
+    "sentiment": 5.431491654816253,
+    "in_degree": 1,
+    "out_degree": 3,
+    "top_5_in_mentions": [
+        "MarkPocan"
+    ],
+    "top_5_out_mentions": [
+        "NikkiHaley",
+        "SteveScalise",
+        "Jim_Jordan"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "NikkiHaley",
+            "mentions_count": 5
+        },
+        {
+            "account_name": "SteveScalise",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "Jim_Jordan",
+            "mentions_count": 1
+        }
+    ]
+}

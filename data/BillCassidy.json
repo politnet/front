@@ -1,0 +1,31 @@
+{
+    "account_name": "BillCassidy",
+    "full_name": "Bill Cassidy, M.D.",
+    "political_party": "Republican",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/811322431029837824/OIMky_X__400x400.jpg",
+    "sentiment": 5.414882973021254,
+    "in_degree": 1,
+    "out_degree": 3,
+    "top_5_in_mentions": [
+        "MittRomney"
+    ],
+    "top_5_out_mentions": [
+        "KamalaHarris",
+        "realDonaldTrump",
+        "kevinomccarthy"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "KamalaHarris",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "realDonaldTrump",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "kevinomccarthy",
+            "mentions_count": 1
+        }
+    ]
+}

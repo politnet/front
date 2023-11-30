@@ -1,0 +1,92 @@
+{
+    "account_name": "MittRomney",
+    "full_name": "Mitt Romney",
+    "political_party": "Republican",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/964489716622966784/xbtCe2td_400x400.jpg",
+    "sentiment": 5.539862214708371,
+    "in_degree": 4,
+    "out_degree": 17,
+    "top_5_in_mentions": [
+        "MittRomney",
+        "SenJohnMcCain",
+        "TulsiGabbard",
+        "CarlyFiorina"
+    ],
+    "top_5_out_mentions": [
+        "realDonaldTrump",
+        "SenJohnMcCain",
+        "MittRomney",
+        "LindseyGrahamSC",
+        "tedcruz"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "VP",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "realDonaldTrump",
+            "mentions_count": 7
+        },
+        {
+            "account_name": "tedcruz",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "MittRomney",
+            "mentions_count": 3
+        },
+        {
+            "account_name": "SenJohnMcCain",
+            "mentions_count": 7
+        },
+        {
+            "account_name": "LindseyGrahamSC",
+            "mentions_count": 3
+        },
+        {
+            "account_name": "GovernorPerry",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "BillCassidy",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "JebBush",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "CarlyFiorina",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "NikkiHaley",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "ChrisChristie",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "BernieSanders",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "SteveScalise",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "HillaryClinton",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "marcorubio",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "SenMikeLee",
+            "mentions_count": 1
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "account_name": "AOC",
+    "full_name": "Alexandria Ocasio-Cortez",
+    "political_party": "Democratic",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/923274881197895680/AbHcStkl_400x400.jpg",
+    "sentiment": 5.3856718380226125,
+    "in_degree": 19,
+    "out_degree": 6,
+    "top_5_in_mentions": [
+        "Liz_Cheney",
+        "BernieSanders",
+        "tedcruz",
+        "tedlieu",
+        "SenSchumer"
+    ],
+    "top_5_out_mentions": [
+        "AOC",
+        "marcorubio",
+        "POTUS",
+        "RepRaskin",
+        "MarkPocan"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "AOC",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "marcorubio",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "POTUS",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "RepRaskin",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "MarkPocan",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "tedlieu",
+            "mentions_count": 1
+        }
+    ]
+}

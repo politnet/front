@@ -1,0 +1,49 @@
+{
+    "account_name": "realDonaldTrump",
+    "full_name": "Donald J. Trump",
+    "political_party": "Republican",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/874276197357596672/kUuht00m_400x400.jpg",
+    "sentiment": 5.402210218320957,
+    "in_degree": 16,
+    "out_degree": 6,
+    "top_5_in_mentions": [
+        "Liz_Cheney",
+        "GovernorPerry",
+        "JohnKasich",
+        "kevinomccarthy",
+        "SarahPalinUSA"
+    ],
+    "top_5_out_mentions": [
+        "SenJohnThune",
+        "SenTomCotton",
+        "HawleyMO",
+        "Jim_Jordan",
+        "JohnCornyn"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "SenJohnThune",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "SenTomCotton",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "HawleyMO",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "Jim_Jordan",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "JohnCornyn",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "Mike_Pence",
+            "mentions_count": 1
+        }
+    ]
+}

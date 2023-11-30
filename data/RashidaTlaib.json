@@ -1,0 +1,40 @@
+{
+    "account_name": "RashidaTlaib",
+    "full_name": "Rashida Tlaib",
+    "political_party": "Democratic",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1443756959992369158/YXvAWaa1_400x400.jpg",
+    "sentiment": 5.415515800033448,
+    "in_degree": 11,
+    "out_degree": 4,
+    "top_5_in_mentions": [
+        "BernieSanders",
+        "AyannaPressley",
+        "tedcruz",
+        "Liz_Cheney",
+        "PramilaJayapal"
+    ],
+    "top_5_out_mentions": [
+        "POTUS",
+        "BernieSanders",
+        "IlhanMN",
+        "RepMaxineWaters"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "RepMaxineWaters",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "POTUS",
+            "mentions_count": 6
+        },
+        {
+            "account_name": "BernieSanders",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "IlhanMN",
+            "mentions_count": 2
+        }
+    ]
+}

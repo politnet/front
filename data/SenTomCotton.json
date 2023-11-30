@@ -1,0 +1,33 @@
+{
+    "account_name": "SenTomCotton",
+    "full_name": "Tom Cotton",
+    "political_party": "Republican",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/568884049058357248/M-VeVL9u_normal.jpeg",
+    "sentiment": 5.329463275079293,
+    "in_degree": 3,
+    "out_degree": 3,
+    "top_5_in_mentions": [
+        "realDonaldTrump",
+        "SenJohnThune",
+        "SenatorLankford"
+    ],
+    "top_5_out_mentions": [
+        "SenSchumer",
+        "ChrisCoons",
+        "SenMarkKelly"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "SenSchumer",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "ChrisCoons",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "SenMarkKelly",
+            "mentions_count": 1
+        }
+    ]
+}

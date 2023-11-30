@@ -1,0 +1,23 @@
+{
+    "account_name": "TulsiGabbard",
+    "full_name": "Tulsi Gabbard 🌺",
+    "political_party": "Democratic",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1579695738446958592/AY3LJ319_400x400.jpg",
+    "sentiment": 5.394687265449093,
+    "in_degree": 3,
+    "out_degree": 1,
+    "top_5_in_mentions": [
+        "MarkPocan",
+        "BenSasse",
+        "SarahPalinUSA"
+    ],
+    "top_5_out_mentions": [
+        "MittRomney"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "MittRomney",
+            "mentions_count": 1
+        }
+    ]
+}

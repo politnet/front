@@ -1,0 +1,61 @@
+{
+    "account_name": "tedcruz",
+    "full_name": "Ted Cruz",
+    "political_party": "Republican",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1717966605903179776/scSx1uhK_400x400.jpg",
+    "sentiment": 5.281393396754339,
+    "in_degree": 12,
+    "out_degree": 9,
+    "top_5_in_mentions": [
+        "vgescobar",
+        "LindseyGrahamSC",
+        "MittRomney",
+        "BenSasse",
+        "CortezMasto"
+    ],
+    "top_5_out_mentions": [
+        "Jim_Jordan",
+        "AOC",
+        "SenMarkKelly",
+        "RashidaTlaib",
+        "JohnCornyn"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "Jim_Jordan",
+            "mentions_count": 3
+        },
+        {
+            "account_name": "JohnCornyn",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "AOC",
+            "mentions_count": 3
+        },
+        {
+            "account_name": "SenMarkKelly",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "tedlieu",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "RashidaTlaib",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "IlhanMN",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "HawleyMO",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "SenSchumer",
+            "mentions_count": 1
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "account_name": "SenatorLankford",
+    "full_name": "Sen. James Lankford",
+    "political_party": "Republican",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1653492130625585154/RBeN2cb3_400x400.jpg",
+    "sentiment": 5.374073816596108,
+    "in_degree": 5,
+    "out_degree": 9,
+    "top_5_in_mentions": [
+        "SenJackyRosen",
+        "SenJohnThune",
+        "ChrisCoons",
+        "SenatorTimScott",
+        "SenatorBraun"
+    ],
+    "top_5_out_mentions": [
+        "SenJackyRosen",
+        "JohnCornyn",
+        "SenatorHassan",
+        "ChrisCoons",
+        "SenatorTimScott"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "ChrisCoons",
+            "mentions_count": 3
+        },
+        {
+            "account_name": "SenatorTimScott",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "SenJackyRosen",
+            "mentions_count": 5
+        },
+        {
+            "account_name": "JohnCornyn",
+            "mentions_count": 4
+        },
+        {
+            "account_name": "SteveDaines",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "SenatorHassan",
+            "mentions_count": 4
+        },
+        {
+            "account_name": "SenMarkKelly",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "SenTomCotton",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "POTUS",
+            "mentions_count": 1
+        }
+    ]
+}

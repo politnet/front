@@ -1,0 +1,18 @@
+{
+    "account_name": "GovRonDeSantis",
+    "full_name": "Ron DeSantis",
+    "political_party": "Republican",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1620515880856584192/v0rmmdSi_400x400.jpg",
+    "sentiment": 5.514274686862817,
+    "in_degree": 5,
+    "out_degree": 0,
+    "top_5_in_mentions": [
+        "JebBush",
+        "GavinNewsom",
+        "MarkPocan",
+        "LindseyGrahamSC",
+        "vgescobar"
+    ],
+    "top_5_out_mentions": [],
+    "all_out_mentions": []
+}

@@ -1,0 +1,24 @@
+{
+    "account_name": "RandPaul",
+    "full_name": "Rand Paul",
+    "political_party": "Republican",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/681152691461042177/_PrgDgFA_400x400.jpg",
+    "sentiment": 5.400128755364807,
+    "in_degree": 4,
+    "out_degree": 1,
+    "top_5_in_mentions": [
+        "Liz_Cheney",
+        "LindseyGrahamSC",
+        "NancyMace",
+        "SenatorBraun"
+    ],
+    "top_5_out_mentions": [
+        "POTUS"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "POTUS",
+            "mentions_count": 1
+        }
+    ]
+}

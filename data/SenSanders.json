@@ -1,0 +1,49 @@
+{
+    "account_name": "SenSanders",
+    "full_name": "Bernie Sanders",
+    "political_party": "Independent/Democratic Socialist",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/794619281271033856/Fs0QQaH7_400x400.jpg",
+    "sentiment": 5.394776622126809,
+    "in_degree": 5,
+    "out_degree": 6,
+    "top_5_in_mentions": [
+        "SenWarren",
+        "SenSchumer",
+        "Liz_Cheney",
+        "MarkPocan",
+        "SenMikeLee"
+    ],
+    "top_5_out_mentions": [
+        "IlhanMN",
+        "SenatorBraun",
+        "LindseyGrahamSC",
+        "SenWarren",
+        "SpeakerPelosi"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "LindseyGrahamSC",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "IlhanMN",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "SenatorBraun",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "SenWarren",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "SpeakerPelosi",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "RashidaTlaib",
+            "mentions_count": 1
+        }
+    ]
+}

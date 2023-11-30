@@ -1,0 +1,57 @@
+{
+    "account_name": "SenWarren",
+    "full_name": "Elizabeth Warren",
+    "political_party": "Democratic",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/722044174799777792/bXaodRhx_400x400.jpg",
+    "sentiment": 5.344414173491567,
+    "in_degree": 5,
+    "out_degree": 8,
+    "top_5_in_mentions": [
+        "timkaine",
+        "SenJackyRosen",
+        "SenatorLujan",
+        "PramilaJayapal",
+        "SenSanders"
+    ],
+    "top_5_out_mentions": [
+        "POTUS",
+        "SenSanders",
+        "SenatorBraun",
+        "SenSchumer",
+        "SenMikeLee"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "POTUS",
+            "mentions_count": 41
+        },
+        {
+            "account_name": "SenSanders",
+            "mentions_count": 9
+        },
+        {
+            "account_name": "SenMikeLee",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "SenatorBraun",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "RepRaskin",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "SenSchumer",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "VP",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "SenJackyRosen",
+            "mentions_count": 1
+        }
+    ]
+}

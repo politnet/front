@@ -1,0 +1,75 @@
+{
+    "account_name": "RepAdamSchiff",
+    "full_name": "Adam Schiff",
+    "political_party": "Democratic",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1268175179626303497/-DNpPNUm_400x400.jpg",
+    "sentiment": 5.341875242290741,
+    "in_degree": 3,
+    "out_degree": 13,
+    "top_5_in_mentions": [
+        "Liz_Cheney",
+        "SenatorLujan",
+        "RepRaskin"
+    ],
+    "top_5_out_mentions": [
+        "POTUS",
+        "Mike_Pence",
+        "VP",
+        "Jim_Jordan",
+        "SpeakerPelosi"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "BarackObama",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "Mike_Pence",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "POTUS",
+            "mentions_count": 26
+        },
+        {
+            "account_name": "VP",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "GavinNewsom",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "Jim_Jordan",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "SpeakerPelosi",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "AOC",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "LindseyGrahamSC",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "RepMaxineWaters",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "timkaine",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "RepRaskin",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "HawleyMO",
+            "mentions_count": 1
+        }
+    ]
+}

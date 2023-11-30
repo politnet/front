@@ -1,0 +1,71 @@
+{
+    "account_name": "MartinHeinrich",
+    "full_name": "Martin Heinrich",
+    "political_party": "Democratic",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1650529298246422528/2wNyjrCQ_400x400.jpg",
+    "sentiment": 5.5099820288777295,
+    "in_degree": 3,
+    "out_degree": 12,
+    "top_5_in_mentions": [
+        "SenatorLujan",
+        "DebHaalandNM",
+        "JerryMoran"
+    ],
+    "top_5_out_mentions": [
+        "POTUS",
+        "ReverendWarnock",
+        "KamalaHarris",
+        "SenGillibrand",
+        "amyklobuchar"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "SenGillibrand",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "POTUS",
+            "mentions_count": 3
+        },
+        {
+            "account_name": "amyklobuchar",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "HillaryClinton",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "IlhanMN",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "gretchenwhitmer",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "sharicedavids",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "BarackObama",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "ReverendWarnock",
+            "mentions_count": 3
+        },
+        {
+            "account_name": "KamalaHarris",
+            "mentions_count": 3
+        },
+        {
+            "account_name": "ossoff",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "CoryBooker",
+            "mentions_count": 1
+        }
+    ]
+}

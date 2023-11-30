@@ -1,0 +1,41 @@
+{
+    "account_name": "BenSasse",
+    "full_name": "Ben Sasse",
+    "political_party": "Republican",
+    "profile_image_url": "https://pbs.twimg.com/profile_images/1716496872116781056/85gTQW2u_400x400.jpg",
+    "sentiment": 5.429441875131369,
+    "in_degree": 1,
+    "out_degree": 5,
+    "top_5_in_mentions": [
+        "JebBush"
+    ],
+    "top_5_out_mentions": [
+        "AOC",
+        "tedcruz",
+        "SenMikeLee",
+        "TulsiGabbard",
+        "amyklobuchar"
+    ],
+    "all_out_mentions": [
+        {
+            "account_name": "SenMikeLee",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "AOC",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "TulsiGabbard",
+            "mentions_count": 1
+        },
+        {
+            "account_name": "tedcruz",
+            "mentions_count": 2
+        },
+        {
+            "account_name": "amyklobuchar",
+            "mentions_count": 1
+        }
+    ]
+}
