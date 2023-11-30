@@ -1,18 +1,27 @@
-const edgeScale = 0.2
-const nodeScale = 0.2
-
 const partyColors = {
-  'Democrats': '#3498DB', // blue
-  'Democrats-dark': '#2471A3', // dark blue
-  'Republicans': '#E74C3C', // red
-  'Republicans-dark': '#A93226', // dark red
+  'Democratic': '#3498DB', // blue
+  'Democratic-dark': '#2471A3', // dark blue
+  'Republican': '#E74C3C', // red
+  'Republican-dark': '#A93226', // dark red
+  'Independent': '#00B300', // green
+  'Independent-dark': '##006600', // dark green
 };
+
+function scaleEdge(width) {
+  return Math.log(width + 1) / 2
+}
+
+function scaleNode(value) {
+  return Math.log((value + 1) ** 3)
+}
 
 function findNodeByAccountName(nodes, account_name) {
   return nodes.find(node => node.account_name === account_name)
 }
 
 function createNode(data) {
+  console.log(`Parrty: ${data.political_party}, color ${partyColors[data.political_party]}`)
+
   return { 
     id: Math.random(),
     account_name: data.account_name,
@@ -26,7 +35,7 @@ function createNode(data) {
 
     shape: 'circularImage',
     image: data.profile_image_url,
-    value: data.weighted_in_degree * nodeScale,
+    value: scaleNode(data.in_degree),
     color: {
       border: partyColors[data.political_party],
       highlight: { 
@@ -45,7 +54,7 @@ function createEdge(node_from, node_to, mentions_count) {
     to: node_to.id,
     from_account_name: node_from.account_name,
     to_account_name: node_to.account_name,
-    width: mentions_count * edgeScale,
+    width: scaleEdge(mentions_count),
     mentions_count: mentions_count
   }
 }
@@ -63,6 +72,11 @@ function transformTopMentions(nodes) {
 
 export function buildOptions() {
     return {
+        physics: {
+          hierarchicalRepulsion: {
+            nodeDistance: 120
+          }
+        },
         interaction: {
           hover: true
         },

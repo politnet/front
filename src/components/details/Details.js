@@ -23,7 +23,7 @@ const Details = ({ node, nodeSetter }) => {
     const full_name = node && node.full_name ? node.full_name : ''
     const political_party = node && node.political_party ? node.political_party : ''
     const profile_image_url = node && node.image ? node.image : ''
-    const sentiment = node && node.sentiment ? node.sentiment : ''
+    const sentiment = node && node.sentiment ? parseFloat(node.sentiment).toFixed(2) : ''
     const description = node && node.description ? node.description : lorem_ipsum
     const top_5_in_mentions = node && node.top_5_in_mentions ? node.top_5_in_mentions : []
     const top_5_out_mentions = node && node.top_5_out_mentions ? node.top_5_out_mentions : []
