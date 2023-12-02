@@ -2,8 +2,8 @@ import '../Common.css'
 
 const EdgeTooltip = ({ edge, position }) => {
   const visible = edge ? 1 : 0
-  const from_account_name = edge && edge.from_account_name ? edge.from_account_name : ''
-  const to_account_name = edge && edge.to_account_name ? edge.to_account_name : ''
+  const from_full_name = edge && edge.from_full_name ? edge.from_full_name : ''
+  const to_full_name = edge && edge.to_full_name ? edge.to_full_name : ''
   const mentions_count = edge && edge.mentions_count ? edge.mentions_count : ''
 
   return (
@@ -14,7 +14,7 @@ const EdgeTooltip = ({ edge, position }) => {
         opacity: visible,
       }}
     >
-      <p><b>{from_account_name}</b> mentions <b>{to_account_name}</b></p>
+      <p><b>{from_full_name}</b> mentions <b>{to_full_name}</b></p>
       <p><b>{mentions_count}</b> times</p>
     </div>
   );

@@ -52,8 +52,8 @@ function createEdge(node_from, node_to, mentions_count) {
   return { 
     from: node_from.id,
     to: node_to.id,
-    from_account_name: node_from.account_name,
-    to_account_name: node_to.account_name,
+    from_full_name: node_from.full_name,
+    to_full_name: node_to.full_name,
     width: scaleEdge(mentions_count),
     mentions_count: mentions_count
   }
