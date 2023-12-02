@@ -6,7 +6,8 @@ const About = ({ setAboutOpen, graph }) => {
                     Our goal is to offer users a unique perspective on the relationships and connections that shape the political landscape.`
     let text_2 = `The network is based on knowledge from X platform, from where we extract data about the politicians and their relationships. 
                     Currently the network contains ${graph.nodes.length} nodes representing politicians and ${graph.edges.length} edges representing tweet mentions.
-                    Weight of edges indicate the number of outgoing mentions from a politician to another. The nodes are resized according to the number of incoming mentions.`
+                    Weight of edges indicate the number of outgoing mentions from a politician to another. The nodes are resized according to the number of incoming mentions.
+                    Nodes are colored according to the political party of the politician.`
     let text_3 = `At this moment description feature is not available yet, therefore it is filled with lorem ipsum temporarily.`
     let text_4 = `Last data update: 30.11.2023`
     return (
