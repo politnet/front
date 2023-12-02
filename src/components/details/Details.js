@@ -21,6 +21,7 @@ const Details = ({ node, nodeSetter }) => {
     const visible = node ? 1 : 0
     const display = visible ? 'flex' : 'none'
     const full_name = node && node.full_name ? node.full_name : ''
+    const account_name = node && node.account_name ? node.account_name : ''
     const political_party = node && node.political_party ? node.political_party : ''
     const profile_image_url = node && node.image ? node.image : ''
     const sentiment = node && node.sentiment ? parseFloat(node.sentiment).toFixed(2) : ''
@@ -56,6 +57,7 @@ const Details = ({ node, nodeSetter }) => {
         <div className="description">
           <p>{description}</p>
         </div>
+        <h5>Twitter @{account_name}</h5>
         <MentionList title={"Top 5 Mentioned by"} mentions={top_5_in_mentions} nodeSetter={nodeSetter}/>
         <MentionList title={"Top 5 Mentions"} mentions={top_5_out_mentions} nodeSetter={nodeSetter}/>
       </div>
