@@ -8,7 +8,7 @@ const About = ({ setAboutOpen, graph }) => {
                     Currently the network contains ${graph.nodes.length} nodes representing politicians and ${graph.edges.length} edges representing tweet mentions.
                     Weight of edges indicate the number of outgoing mentions from a politician to another. The nodes are resized according to the number of incoming mentions.
                     Nodes are colored according to the political party of the politician.`
-    let text_3 = `At this moment description feature is not available yet, therefore it is filled with lorem ipsum temporarily.`
+    let text_3 = `Descriptions were generated with the help of Chat GPT.`
     let text_4 = `Last data update: 30.11.2023`
     return (
         <div className="about side-panel">
