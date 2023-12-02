@@ -6,8 +6,8 @@ import React, { useEffect, useRef } from 'react';
 const lorem_ipsum = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
 
 function getColor(sentiment) {
-  const red_dark = Math.floor((1 - sentiment) * 100);
-  const green_dark = Math.floor(sentiment * 100);
+  const red_dark = Math.floor((1 - sentiment/10) * 100);
+  const green_dark = Math.floor(sentiment/10 * 100);
   return `rgb(${red_dark}, ${green_dark}, 0)`;
 }
 
@@ -49,7 +49,7 @@ const Details = ({ node, nodeSetter }) => {
         <h2>{full_name}</h2>
         <p>{political_party}</p>
         <div className="stats">
-          <h5>How positive are his statements? </h5>
+          <h5>How positive are his/her statements? </h5>
           <p style={{background: `linear-gradient(to bottom, ${getLighterColor(sentiment)}, ${getColor(sentiment)})`}}>
             {sentiment}
           </p>
