@@ -4,7 +4,7 @@ const partyColors = {
   'Republican': '#E74C3C', // red
   'Republican-dark': '#A93226', // dark red
   'Independent': '#00B300', // green
-  'Independent-dark': '##006600', // dark green
+  'Independent-dark': '#006600', // dark green
 };
 
 function scaleEdge(width) {
