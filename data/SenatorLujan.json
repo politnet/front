@@ -1,6 +1,6 @@
 {
     "account_name": "SenatorLujan",
-    "full_name": "Senator Ben Ray Luján",
+    "full_name": "Senator Ben Ray Luj\u00e1n",
     "political_party": "Democratic",
     "profile_image_url": "https://pbs.twimg.com/profile_images/1620159502518558720/20b1WdeY_400x400.jpg",
     "sentiment": 5.548666768168899,
@@ -55,5 +55,5 @@
             "mentions_count": 1
         }
     ],
-    "description": "A Republican senator from Oklahoma, known for his conservative views, particularly on fiscal and social issues. Lankford serves on various Senate committees and is involved in discussions about government accountability and faith-based initiatives.\n"
+    "description": "A Democratic senator from New Mexico, with a focus on issues like broadband access, healthcare, and renewable energy. Luj\u00e1n previously served in the House of Representatives and has been active in promoting technology and innovation."
 }
